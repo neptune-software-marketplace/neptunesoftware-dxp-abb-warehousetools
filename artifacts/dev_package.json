@@ -1,0 +1,98 @@
+{
+	"id": "9EA3B199-FA16-ED11-BD6E-A085FCBC6CDC",
+	"createdAt": "2022-08-08T09:15:10.473Z",
+	"createdBy": "kristin.eliassen@neptune-software.com",
+	"git": {
+		"targetServers": [],
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-warehousetools",
+		"testServers": [],
+		"packageJSON": [
+			"==OBJECT STRING==",
+			"{",
+			"  \"name\": \"neptunesoftware-dxp-abb-warehousetools\",",
+			"  \"version\": \"1.0.0\",",
+			"  \"description\": \"neptunesoftware-dxp-abb-warehousetools\",",
+			"  \"author\": \"Neptune Software\",",
+			"  \"license\": \"LicenseRef-LICENSE\",",
+			"  \"private\": true,",
+			"  \"scripts\": {",
+			"    \"deploy\": \"ts-node src/deploy.ts\",",
+			"    \"test\": \"jest --passWithNoTests\"",
+			"  },",
+			"  \"engines\": {",
+			"    \"node\": \"14.16.0\"",
+			"  },",
+			"  \"devDependencies\": {",
+			"    \"@types/jest\": \"^26.0.23\",",
+			"    \"typescript\": \"^4.2.3\",",
+			"    \"ts-node\": \"^10.0.0\",",
+			"    \"axios\": \"^0.21.1\",",
+			"    \"jest\": \"^27.0.4\",",
+			"    \"ts-jest\": \"^27.0.3\"",
+			"  }",
+			"}",
+			""
+		]
+	},
+	"name": "neptunesoftware-dxp-abb-warehousetools",
+	"description": null,
+	"ver": "22.8.8.919",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "5338D349-A5DD-EC11-B656-A085FCBCB3C7",
+			"application": "hackathon_warehouse",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "ABDE12E1-52E7-EC11-B656-A085FCBCB3C7",
+			"application": "hackathon_wharehouse_list_offline",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "AA4764ED-E5EB-EC11-B656-A085FCBCB3C7",
+			"application": "hackathon_wharehouse_create_offline",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "20BAE134-A7DD-EC11-B656-A085FCBCB3C7",
+			"name": "hackathon_warehouse_API",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "F2D104A3-52E7-EC11-B656-A085FCBCB3C7",
+			"name": "hackathon_products_api",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": []
+}

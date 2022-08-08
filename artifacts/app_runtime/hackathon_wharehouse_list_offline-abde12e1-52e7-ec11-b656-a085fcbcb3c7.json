@@ -1,0 +1,857 @@
+{
+	"id": "abde12e1-52e7-ec11-b656-a085fcbcb3c7",
+	"createdAt": "2022-06-08T17:47:22.716Z",
+	"createdBy": "daniela.pascoal@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "56caee7a-f824-49c3-e2e9-c6c5f3d24b89",
+			"fieldName": "oShell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "c4280fa9-b4a5-4d77-d460-c614e211619f",
+					"fieldName": "oApp",
+					"fieldParent": "56caee7a-f824-49c3-e2e9-c6c5f3d24b89",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "55b31a0c-81c9-4d57-c533-8b7f757df9d8",
+							"fieldName": "oPageAddProduct",
+							"fieldParent": "c4280fa9-b4a5-4d77-d460-c614e211619f",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "navButtonPress",
+									"grouping": "Events",
+									"value": "oApp.back();",
+									"script": "oApp.back();",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "27669792-b2c0-42ca-a243-80c4c463b34e",
+									"fieldName": "oBarFooterAddProduct",
+									"fieldParent": "55b31a0c-81c9-4d57-c533-8b7f757df9d8",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setFooter",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "99a986f1-a090-4d27-b6bb-fd933a1516cc",
+											"fieldName": "Right",
+											"fieldParent": "27669792-b2c0-42ca-a243-80c4c463b34e",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "cd2f4eb1-bf49-48f3-c8a7-2bdbede8e567",
+													"fieldName": "oButtonSave",
+													"fieldParent": "99a986f1-a090-4d27-b6bb-fd933a1516cc",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://save",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"// var addProduct = modeloSimpleFormAddProduct.getData();\r",
+																"submit();\r",
+																""
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+									"fieldName": "oSimpleFormAddProduct",
+									"fieldParent": "55b31a0c-81c9-4d57-c533-8b7f757df9d8",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "hackathon_products_api>hackathon_products",
+									"bindingType": "u",
+									"bindingSource": "API",
+									"bindingParentID": "F2D104A3-52E7-EC11-B656-A085FCBCB3C7",
+									"bindingPathID": "fe92ec83-8920-4527-a0ce-3a0dd5476932",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "7ab794e4-7a41-4a5f-ef2a-c666dbbaa268",
+											"fieldName": "lbloSimpleFormprod_name",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Product Name",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "84c37e7b-b1f4-4bae-e5dd-692236fa1adf",
+											"fieldName": "inoSimpleFormprod_name",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/prod_name}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "54b11e57-ef39-4185-9867-ee1e1b2d74cc",
+											"fieldName": "lbloSimpleFormInicialStock",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Inicial Stock",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "e7080b95-12ed-4045-d25a-57b356d14139",
+											"fieldName": "inoSimpleFormInicialStock",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/quantity}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "2ee6daf2-9e97-4fe5-f144-129212cf316c",
+											"fieldName": "lbloSimpleFormAddProductunit_mesure",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Unit Measure",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "2ae2ef49-bc77-43be-e4e7-4e6ea85f4eb2",
+											"fieldName": "inoSimpleFormAddProductunit_mesure",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/unit_mesure}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "35baeb80-3e9b-4d2c-8ab7-285b9fca36a2",
+											"fieldName": "lbloSimpleFormAddProductref",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Ref",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "35c62d98-ba41-4722-9b27-4297d37e8e7d",
+											"fieldName": "inoSimpleFormAddProductref",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/ref}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "e5830d93-36c7-476e-a7b4-d3aeabe92bca",
+											"fieldName": "lbloSimpleFormimage",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Image",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "c2db3aa0-5729-45e2-e6d0-0062f4a29775",
+											"fieldName": "oButtonCameraUpload",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Take or Upload Picture",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://camera",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": [
+														"==OBJECT STRING==",
+														"fileElem = document.getElementById(\"file-input\");\r",
+														"fileElem.click();"
+													],
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "45bb4b47-b79e-4cb1-d919-d7363ee4aef5",
+											"fieldName": "oLabel",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										},
+										{
+											"fieldNo": "6b1d8ccc-d11e-4618-c6cf-22fddfdac192",
+											"fieldName": "oVBox2",
+											"fieldParent": "9183b993-1fa6-4d48-d7de-e1f4d5f6e3c7",
+											"fieldType": "sap.m.VBox",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "130a5ba5-9c73-4056-fe14-4423ce0d2ff8",
+													"fieldName": "oFlexBoxCameraUpload",
+													"fieldParent": "6b1d8ccc-d11e-4618-c6cf-22fddfdac192",
+													"fieldType": "sap.m.FlexBox",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "DarkerTint",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "justifyContent",
+															"grouping": "Properties",
+															"value": "Center",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "4a2a3351-949d-46b6-c785-2c807962a234",
+															"fieldName": "oHTMLObjectCameraUpload",
+															"fieldParent": "130a5ba5-9c73-4056-fe14-4423ce0d2ff8",
+															"fieldType": "sap.ui.core.HTML",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "21e479bf-7634-4c5b-de80-aee9818b51e3",
+													"fieldName": "oHBoxCameraUploadDisplayArea",
+													"fieldParent": "6b1d8ccc-d11e-4618-c6cf-22fddfdac192",
+													"fieldType": "sap.m.HBox",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "Tint",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "e0009ddf-1053-49cc-9da2-5cc0a97708e2",
+															"fieldName": "oImage",
+															"fieldParent": "21e479bf-7634-4c5b-de80-aee9818b51e3",
+															"fieldType": "sap.m.Image",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "width",
+																	"grouping": "Properties",
+																	"value": "100%",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "height",
+																	"grouping": "Properties",
+																	"value": "10rem",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "f060c703-7bad-4f9e-d887-643ca399278c",
+					"fieldName": "Functions",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "25f2b55d-8a39-4647-f3fc-994394f27efe",
+							"fieldName": "oJavascript",
+							"fieldParent": "f060c703-7bad-4f9e-d887-643ca399278c",
+							"fieldType": "neptune.Script",
+							"script": [
+								"==OBJECT STRING==",
+								"// Function to clear the form\r",
+								"function fclear() {\r",
+								"\r",
+								"    inoSimpleFormprod_name.setValue(\"\");\r",
+								"    inoSimpleFormInicialStock.setValue(\"\");\r",
+								"    inoSimpleFormAddProductunit_mesure.setValue(\"\");\r",
+								"    inoSimpleFormAddProductref.setValue(\"\");\r",
+								"    oImage.setSrc(\"\");\r",
+								"    inoSimpleFormprod_name.setValueState(\"None\")\r",
+								"    inoSimpleFormInicialStock.setValueState(\"None\")\r",
+								"    inoSimpleFormAddProductunit_mesure.setValueState(\"None\")\r",
+								"    inoSimpleFormAddProductref.setValueState(\"None\")\r",
+								"}\r",
+								"\r",
+								"function submit() {\r",
+								"    // **** VALIDATION SECTION ******\r",
+								"    // Use \"Return\" to get out of the script\r",
+								"    if (inoSimpleFormprod_name.getValue() === \"\") {\r",
+								"        inoSimpleFormprod_name.setValueState(\"Error\")\r",
+								"        sap.m.MessageToast.show(\"Please provide a Product name\");\r",
+								"        return\r",
+								"    };\r",
+								"\r",
+								"    if (inoSimpleFormInicialStock.getValue() === \"\") {\r",
+								"        inoSimpleFormInicialStock.setValueState(\"Error\")\r",
+								"        sap.m.MessageToast.show(\"Please provide a Inicial Stock\");\r",
+								"        return\r",
+								"    };\r",
+								"\r",
+								"    if (inoSimpleFormAddProductunit_mesure.getValue() === \"\") {\r",
+								"        inoSimpleFormAddProductunit_mesure.setValueState(\"Error\")\r",
+								"        sap.m.MessageToast.show(\"Please provide a Unit Mesure\");\r",
+								"        return\r",
+								"    };\r",
+								"\r",
+								"    if (inoSimpleFormAddProductref.getValue() === \"\") {\r",
+								"        inoSimpleFormAddProductref.setValueState(\"Error\")\r",
+								"        sap.m.MessageToast.show(\"Please provide product Referenc\");\r",
+								"        return\r",
+								"    };\r",
+								"\r",
+								"    // Create the empty Object\r",
+								"    let final_info = {}\r",
+								"\r",
+								"    // Add attributes to the Object, based on the inputs\r",
+								"    final_info.prod_name = inoSimpleFormprod_name.getValue();\r",
+								"    final_info.stock_lost = 0;\r",
+								"    final_info.image = oImage.getSrc();\r",
+								"    final_info.stock_available = inoSimpleFormInicialStock.getValue();\r",
+								"    final_info.stock_Inicial = inoSimpleFormInicialStock.getValue();\r",
+								"    final_info.ref = inoSimpleFormAddProductref.getValue();\r",
+								"    final_info.unit_mesure = inoSimpleFormAddProductunit_mesure.getValue();\r",
+								"    var options = { data: final_info };\r",
+								"\r",
+								"\r",
+								"    if (!AppCache.isOffline) {\r",
+								"        console.log(\"Online\");\r",
+								"        apioRestAPIAddProduct(options);\r",
+								"    } else {\r",
+								"\r",
+								"        // Log the Object\r",
+								"        console.log(final_info);\r",
+								"  // Update the modelArray when the apps is offline \r",
+								"        ModelData.Add(oModelArrayAddProd, final_info);\r",
+								"\r",
+								"        // Add Data\r",
+								"        ModelData.Add(oGridList, final_info);\r",
+								"    }\r",
+								"\r",
+								"    oApp.back();\r",
+								"    fclear();\r",
+								"}\r",
+								"\r",
+								"window.addEventListener(\"offline\", onOffline, false);\r",
+								"window.addEventListener(\"online\", onOnline, false);\r",
+								"\r",
+								"function onOffline() {\r",
+								"\r",
+								"    sap.m.MessageToast.show(\"Offline!\");\r",
+								"\r",
+								"}\r",
+								"\r",
+								"function onOnline() {\r",
+								"\r",
+								"    sap.m.MessageToast.show(\"Online!\");\r",
+								"\r",
+								"    // oButtonCallAPI.setVisible(true);\r",
+								"    var offlineData = modeloModelArrayAddProd.getData();\r",
+								"\r",
+								"    // Assign the data object to \"Options\"\r",
+								"    var options = { data: offlineData };\r",
+								"   \r",
+								"    // Trigger the API and pass the \"Options\"\r",
+								"     apioRestAPIAddProduct(options);\r",
+								"\r",
+								"}\r",
+								"// Funtion to Randomly generate a serial number for a new product\r",
+								"function reference(){\r",
+								"\r",
+								" // Randomly generate a serial number for a new product\r",
+								"var serialNum = Math.floor((Math.random() * 10000) + 1);\r",
+								"// Set the serial number to the input field \r",
+								"inoSimpleFormAddProductref.setValue(serialNum);\r",
+								"\r",
+								"// Set the input field editable to false \r",
+								"inoSimpleFormAddProductref.setEditable(false);   \r",
+								"\r",
+								"oHTMLObjectCameraUpload.setContent('<input type=\"file\" accept=\"image/*\" id=\"file-input\"  style=\"display:none\" multiple>')\r",
+								"\r",
+								"}"
+							],
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "aecea623-525f-4aa4-80b2-bd0100f60f54",
+							"fieldName": "oJavascriptCameraUpload1",
+							"fieldParent": "f060c703-7bad-4f9e-d887-643ca399278c",
+							"fieldType": "neptune.Script",
+							"script": [
+								"==OBJECT STRING==",
+								"// Set the File-Input to the oHTMLObject\r",
+								"sap.ui.getCore().attachInit(function(data) {\r",
+								"    oHTMLObjectCameraUpload.setContent('<input type=\"file\" accept=\"image/*\" id=\"file-input\"  style=\"display:none\" multiple>')\r",
+								"\r",
+								"reference();\r",
+								"});\r",
+								"\r",
+								"// After setting the oHTMLObject, create the EventListener\r",
+								"setTimeout(function() {\r",
+								"    const fileInput = oFlexBoxCameraUpload.getDomRef();\r",
+								"    fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));\r",
+								"}, 1000);\r",
+								"\r",
+								"// Callback function from EventListener\r",
+								"function handleFileSelect(f) {\r",
+								"    var reader = new FileReader();\r",
+								"\r",
+								"    reader.onload = (function (theFile) {\r",
+								"        return function (e) {\r",
+								"            var binaryData = e.target.result;\r",
+								"\r",
+								"            // Converting Binary Data to base 64\r",
+								"            var base64String = window.btoa(binaryData);\r",
+								"\r",
+								"            var fullBase64picture = \"data:image/png;base64,\" + base64String;\r",
+								"            //console.log(base64String)\r",
+								"\r",
+								"            oImage.setSrc(fullBase64picture);\r",
+								"\r",
+								"        };\r",
+								"    })(f);\r",
+								"    reader.readAsBinaryString(f);\r",
+								"}"
+							],
+							"customComponent": false,
+							"filePath": "ojavascriptinit",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "8e4321e5-2ddc-4b9d-b6b1-34dcdb30799d",
+					"fieldName": "APIs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "8d995ace-9d5c-4d47-a4fb-6a58ef1d8e06",
+							"fieldName": "oRestAPIAddProduct",
+							"fieldParent": "8e4321e5-2ddc-4b9d-b6b1-34dcdb30799d",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "F2D104A3-52E7-EC11-B656-A085FCBCB3C7",
+							"restOperation": "9DB7A5B5-9218-4226-CDB1-25EB0306B749",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": [
+										"==OBJECT STRING==",
+										"fclear();\r",
+										"// oButtonRefresh.firePress();\r",
+										"reference();\r",
+										"\r",
+										"// Use MessageToast\r",
+										"sap.m.MessageToast.show(\"New Material Created\");"
+									],
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "6ef4a016-f082-40ea-fa33-23192ec102df",
+					"fieldName": "oModelArrayAddProd",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model.array",
+					"script": "",
+					"customComponent": false,
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "cache",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "setEnableCache",
+							"grouping": "Model",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "setCacheType",
+							"grouping": "Model",
+							"value": "IndexedDB",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "22.8.8.1116",
+	"application": "hackathon_wharehouse_list_offline",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "C",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": [
+		"==OBJECT STRING==",
+		".productListItem {\r",
+		"    width: 100%;\r",
+		"    margin: 0.5rem;\r",
+		"    padding: 1rem;\r",
+		"    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\r",
+		"    display: flex;\r",
+		"    flex-direction: column;\r",
+		"}\r",
+		"\r",
+		".sapFGridListDefault {\r",
+		"    display: grid;\r",
+		"    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));\r",
+		"    grid-gap: 0.5rem 0.5rem;\r",
+		"    padding: 1rem;\r",
+		"    margin: 0.5rem;\r",
+		"}\r",
+		""
+	],
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"apis": [
+		{
+			"id": "F2D104A3-52E7-EC11-B656-A085FCBCB3C7",
+			"name": "hackathon_products_api",
+			"ver": "22.8.8.916"
+		}
+	],
+	"package": "9EA3B199-FA16-ED11-BD6E-A085FCBC6CDC"
+}
