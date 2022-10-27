@@ -40,20 +40,20 @@
 	"enableCICD": true,
 	"apps": [
 		{
+			"id": "F4413C5F-D455-ED11-ADE6-A085FC67ADE0",
+			"application": "hackathon_warehouse_create_offline",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "7690188A-D455-ED11-ADE6-A085FC67ADE0",
+			"application": "hackathon_warehouse_list_offline",
+			"title": "",
+			"description": ""
+		},
+		{
 			"id": "5338D349-A5DD-EC11-B656-A085FCBCB3C7",
 			"application": "hackathon_warehouse",
-			"title": "",
-			"description": ""
-		},
-		{
-			"id": "ABDE12E1-52E7-EC11-B656-A085FCBCB3C7",
-			"application": "hackathon_wharehouse_list_offline",
-			"title": "",
-			"description": ""
-		},
-		{
-			"id": "AA4764ED-E5EB-EC11-B656-A085FCBCB3C7",
-			"application": "hackathon_wharehouse_create_offline",
 			"title": "",
 			"description": ""
 		}
@@ -74,7 +74,18 @@
 	],
 	"odataSource": [],
 	"odataMock": [],
-	"dictionary": [],
+	"dictionary": [
+		{
+			"id": "EB2F1DAF-A6DD-EC11-B656-A085FCBCB3C7",
+			"name": "hackathon_warehouse_products",
+			"description": null
+		},
+		{
+			"id": "60E2CE6E-52E7-EC11-B656-A085FCBCB3C7",
+			"name": "hackathon_products",
+			"description": "products"
+		}
+	],
 	"jsclass": [],
 	"jsscript_group": [],
 	"theme": [],

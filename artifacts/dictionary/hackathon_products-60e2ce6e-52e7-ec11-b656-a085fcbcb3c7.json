@@ -1,0 +1,54 @@
+{
+	"id": "60e2ce6e-52e7-ec11-b656-a085fcbcb3c7",
+	"createdAt": "2022-06-08T17:43:07.960Z",
+	"createdBy": "daniela.pascoal@neptune-software.com",
+	"fields": [
+		{
+			"id": "ed6e04dd-1fed-499a-80e6-a8bc742c1681",
+			"fieldName": "prod_name",
+			"fieldType": "text"
+		},
+		{
+			"id": "b439f317-74f2-4d43-8fda-2b18be825f06",
+			"fieldName": "image",
+			"fieldType": "text"
+		},
+		{
+			"id": "063545ed-bc67-4c33-f4e0-384e0acf7e07",
+			"fieldName": "stock_Inicial",
+			"fieldType": "text"
+		},
+		{
+			"id": "4cb9bb7b-56c5-4869-a7e4-285f00a287bc",
+			"fieldName": "stock_available",
+			"fieldType": "text"
+		},
+		{
+			"id": "15b0ea5c-0797-451b-fbe5-995a5929c031",
+			"fieldName": "unit_mesure",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "4b6f63f9-3065-4c95-d888-55dbdc5a09ef",
+			"fieldName": "stock_lost",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "e3c89b1d-53b2-4d3a-a730-5ec94206ee97",
+			"fieldName": "ref",
+			"fieldType": "text",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "hackathon_products",
+	"description": "products",
+	"ver": "22.10.27.1043",
+	"enableAudit": false,
+	"package": "9ea3b199-fa16-ed11-bd6e-a085fcbc6cdc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

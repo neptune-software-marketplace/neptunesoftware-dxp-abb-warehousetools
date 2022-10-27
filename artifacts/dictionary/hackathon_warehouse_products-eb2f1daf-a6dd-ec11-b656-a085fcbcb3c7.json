@@ -1,0 +1,53 @@
+{
+	"id": "eb2f1daf-a6dd-ec11-b656-a085fcbcb3c7",
+	"createdAt": "2022-05-27T10:20:53.593Z",
+	"createdBy": "cezar",
+	"fields": [
+		{
+			"id": "557a38df-d526-4738-b388-f05a1cfc8ca2",
+			"fieldName": "PRODNAME",
+			"fieldType": "text"
+		},
+		{
+			"id": "8535bf01-e618-4459-95b7-a863f555d3cf",
+			"fieldName": "SERIALNUM",
+			"fieldType": "integer"
+		},
+		{
+			"id": "2c264dcd-5f41-4f63-b498-bb4212334dba",
+			"fieldName": "IMAGE",
+			"fieldType": "text"
+		},
+		{
+			"id": "48ceea7e-d985-439f-c445-fe42fbf4c2c3",
+			"fieldName": "QRCODE",
+			"fieldType": "text",
+			"isNullable": false
+		},
+		{
+			"id": "791a4991-3d95-4920-dd67-c26d67ef3cf8",
+			"fieldName": "PRICE",
+			"fieldType": "text"
+		},
+		{
+			"id": "cbe139b9-8f59-4181-a4d7-395081faff56",
+			"fieldName": "CURRENCY",
+			"fieldType": "text"
+		},
+		{
+			"id": "b9ebde5c-b882-4c66-894f-94920aa46f6c",
+			"fieldName": "AVAILABILITY",
+			"fieldType": "text",
+			"isNullable": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "hackathon_warehouse_products",
+	"description": null,
+	"ver": "22.10.27.1047",
+	"enableAudit": false,
+	"package": "9ea3b199-fa16-ed11-bd6e-a085fcbc6cdc",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,7 +1,7 @@
 {
-	"id": "abde12e1-52e7-ec11-b656-a085fcbcb3c7",
-	"createdAt": "2022-06-08T17:47:22.716Z",
-	"createdBy": "daniela.pascoal@neptune-software.com",
+	"id": "f4413c5f-d455-ed11-ade6-a085fc67ade0",
+	"createdAt": "2022-10-27T08:52:50.433Z",
+	"createdBy": "kristin.eliassen@neptune-software.com",
 	"objects": [
 		{
 			"fieldNo": "56caee7a-f824-49c3-e2e9-c6c5f3d24b89",
@@ -35,6 +35,13 @@
 							"request": [],
 							"response": [],
 							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Add Product",
+									"script": "",
+									"translation": []
+								},
 								{
 									"attribute": "navButtonPress",
 									"grouping": "Events",
@@ -202,7 +209,7 @@
 												{
 													"attribute": "text",
 													"grouping": "Properties",
-													"value": "Inicial Stock",
+													"value": "Initial Stock",
 													"script": "",
 													"translation": []
 												},
@@ -532,7 +539,7 @@
 					"data": [
 						{
 							"fieldNo": "25f2b55d-8a39-4647-f3fc-994394f27efe",
-							"fieldName": "oJavascript",
+							"fieldName": "oJavascriptFunctions",
 							"fieldParent": "f060c703-7bad-4f9e-d887-643ca399278c",
 							"fieldType": "neptune.Script",
 							"script": [
@@ -656,7 +663,7 @@
 						},
 						{
 							"fieldNo": "aecea623-525f-4aa4-80b2-bd0100f60f54",
-							"fieldName": "oJavascriptCameraUpload1",
+							"fieldName": "oJavascriptCameraUpload",
 							"fieldParent": "f060c703-7bad-4f9e-d887-643ca399278c",
 							"fieldType": "neptune.Script",
 							"script": [
@@ -792,8 +799,8 @@
 			"data": []
 		}
 	],
-	"ver": "22.8.8.1116",
-	"application": "hackathon_wharehouse_list_offline",
+	"ver": "22.10.27.1052",
+	"application": "hackathon_warehouse_create_offline",
 	"title": "",
 	"description": "",
 	"enableFileStorage": false,
@@ -804,7 +811,7 @@
 	"disabled": false,
 	"loadLaunchpadCode": null,
 	"loadApplicationCode": null,
-	"appType": "C",
+	"appType": "A",
 	"ui5_m": true,
 	"ui5_f": false,
 	"ui5_table": false,
