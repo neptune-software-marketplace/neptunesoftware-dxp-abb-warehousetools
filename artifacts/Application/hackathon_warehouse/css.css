@@ -1,0 +1,28 @@
+.previewImage {
+    border-radius: 2px;
+}
+
+.productListItem {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 1rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.sapFGridListDefault {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-gap: 0.5rem 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.sapMList {
+    margin: -7px;
+}
+
+.sapMSFS::after {
+    content: "\e08d";
+}

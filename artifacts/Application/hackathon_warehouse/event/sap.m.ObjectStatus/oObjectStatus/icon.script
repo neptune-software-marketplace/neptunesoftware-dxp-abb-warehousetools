@@ -1,0 +1,10 @@
+if (typeof AVAILABILITY === "undefined" || AVAILABILITY === null || AVAILABILITY === "") { return; }  
+var formattedText = AVAILABILITY; 
+
+if(AVAILABILITY === "Available"){
+    var formattedText = "sap-icon://fa-regular/check-circle";
+}else{
+    var formattedText = "sap-icon://sys-cancel";
+}
+
+return formattedText;

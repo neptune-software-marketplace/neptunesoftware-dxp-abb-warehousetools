@@ -1,13 +1,13 @@
 {
-	"id": "f2d104a3-52e7-ec11-b656-a085fcbcb3c7",
-	"createdAt": "2022-06-08T17:44:26.020Z",
-	"createdBy": "daniela.pascoal@neptune-software.com",
+	"id": "20bae134-a7dd-ec11-b656-a085fcbcb3c7",
+	"createdAt": "2022-05-27T10:24:36.806Z",
+	"createdBy": "cezar",
 	"auth": [],
 	"endpoints": [],
 	"paths": [
 		{
-			"id": "14D1DA4F-2335-43D6-E0E0-914C8B77727C",
-			"path": "/hackathon_products",
+			"id": "67b85a8e-54c3-4138-fa04-55f0dda15c2d",
+			"path": "/hackathon_warehouse_products",
 			"method": "GET",
 			"headers": [],
 			"parameters": [
@@ -44,7 +44,7 @@
 					"content": [
 						{
 							"objectType": "array",
-							"name": "hackathon_products"
+							"name": "hackathon_warehouse_products"
 						}
 					]
 				},
@@ -61,15 +61,15 @@
 			]
 		},
 		{
-			"id": "A51A1042-5AFC-4482-C533-ED53CEEF9CCC",
-			"path": "/hackathon_products",
+			"id": "f3015778-1413-412c-9b25-746aedfe983c",
+			"path": "/hackathon_warehouse_products",
 			"method": "PUT",
 			"headers": [],
 			"parameters": [],
 			"content": [
 				{
 					"objectType": "array",
-					"name": "hackathon_products"
+					"name": "hackathon_warehouse_products"
 				}
 			],
 			"responses": [
@@ -79,7 +79,7 @@
 					"content": [
 						{
 							"objectType": "array",
-							"name": "hackathon_products"
+							"name": "hackathon_warehouse_products"
 						}
 					]
 				},
@@ -96,8 +96,8 @@
 			]
 		},
 		{
-			"id": "9DB7A5B5-9218-4226-CDB1-25EB0306B749",
-			"path": "/hackathon_products",
+			"id": "7879516a-fd26-4135-9140-56e0da8db18d",
+			"path": "/hackathon_warehouse_products",
 			"method": "POST",
 			"headers": [],
 			"parameters": [
@@ -113,7 +113,7 @@
 			"content": [
 				{
 					"objectType": "array",
-					"name": "hackathon_products"
+					"name": "hackathon_warehouse_products"
 				}
 			],
 			"responses": [
@@ -123,7 +123,7 @@
 					"content": [
 						{
 							"objectType": "array",
-							"name": "hackathon_products"
+							"name": "hackathon_warehouse_products"
 						}
 					]
 				},
@@ -140,8 +140,8 @@
 			]
 		},
 		{
-			"id": "1FCCF725-DD27-4664-EDB4-32D9B3596C46",
-			"path": "/hackathon_products",
+			"id": "02d68d26-0356-496e-9c0d-038152d1adda",
+			"path": "/hackathon_warehouse_products",
 			"method": "DELETE",
 			"headers": [],
 			"parameters": [
@@ -162,7 +162,7 @@
 					"content": [
 						{
 							"objectType": "array",
-							"name": "hackathon_products"
+							"name": "hackathon_warehouse_products"
 						}
 					]
 				},
@@ -179,8 +179,8 @@
 			]
 		},
 		{
-			"id": "D0EDACD4-224A-47AB-FAE5-04004E6E9550",
-			"path": "/hackathon_products/count",
+			"id": "76f0797b-742b-4fbb-e6a8-23652b7bcaf8",
+			"path": "/hackathon_warehouse_products/count",
 			"method": "GET",
 			"headers": [],
 			"parameters": [
@@ -220,172 +220,100 @@
 	],
 	"definitions": [
 		{
-			"id": "fe92ec83-8920-4527-a0ce-3a0dd5476932",
-			"name": "hackathon_products",
+			"id": "de06c343-8e59-4faa-a1fd-794bc2b71fb1",
+			"name": "hackathon_warehouse_products",
 			"properties": [
 				{
-					"id": "fc61848c-a3d9-4d60-ea4e-04fb028d08dc",
+					"id": "448f98af-09ea-4dfc-e9d0-634afbd8407e",
 					"parent": "",
 					"name": "id",
 					"description": "Unique record ID",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "string"
 				},
 				{
-					"id": "2ecef8d9-8401-4d9e-ae55-cdc916fe2d77",
+					"id": "7e04fe29-bb12-4846-c0a9-395099263486",
 					"parent": "",
-					"name": "prod_name",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"name": "PRODNAME",
+					"objectType": "string"
 				},
 				{
-					"id": "29ac304a-12e8-4c48-c3d4-a003134d5c31",
+					"id": "171a4148-d9ef-40b7-9b7a-628a7d582922",
 					"parent": "",
-					"name": "image",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"name": "SERIALNUM",
+					"objectType": "integer"
 				},
 				{
-					"id": "a0bbdd54-a6ce-47bb-8249-771fc7438f75",
+					"id": "ded42eaa-fdc0-4915-bb82-0ddcf51c9b4f",
 					"parent": "",
-					"name": "stock_Inicial",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"name": "IMAGE",
+					"objectType": "string"
 				},
 				{
-					"id": "f444318f-5599-4a39-a600-2d9942c6dc9a",
+					"id": "417af8ab-d6ca-4314-cd2f-f3420bbd8729",
 					"parent": "",
-					"name": "stock_available",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"name": "QRCODE",
+					"objectType": "string"
 				},
 				{
-					"id": "407d5f9f-aba1-4401-9d44-1de7a9ff61f4",
+					"id": "0d62ea96-d552-48b5-f807-ac67658d61cb",
 					"parent": "",
-					"name": "unit_mesure",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"name": "PRICE",
+					"objectType": "string"
 				},
 				{
-					"id": "19488511-fd9b-49ec-9015-29cffbbc12c0",
+					"id": "77b3ff40-660a-4bcd-d679-0208ea3b5aed",
 					"parent": "",
-					"name": "stock_lost",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"name": "CURRENCY",
+					"objectType": "string"
 				},
 				{
-					"id": "7aa9130b-09eb-4a50-caa5-9b2b80b1836b",
+					"id": "b6824117-7dd2-49c9-acb3-625c2efffe03",
 					"parent": "",
-					"name": "ref",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"name": "AVAILABILITY",
+					"objectType": "string"
 				},
 				{
-					"id": "f6d8a37e-1855-44e0-9736-75d5d0186c1f",
+					"id": "224b6401-525e-4908-8e69-e685b8f2bed9",
 					"parent": "",
 					"name": "createdAt",
 					"description": "Date when record was created",
-					"objectType": "number",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "number"
 				},
 				{
-					"id": "0c3bdc3e-109e-4e3d-939d-98b1228b078d",
+					"id": "df95f61a-3b77-4a65-dc14-1dce6aa5a572",
 					"parent": "",
 					"name": "createdBy",
 					"description": "Created By",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "string"
 				},
 				{
-					"id": "f7fdb8c0-946a-4284-ba23-a0c7545c90b9",
+					"id": "e4a35399-6776-4bb3-9bed-33e36fa4067c",
 					"parent": "",
 					"name": "updatedAt",
 					"description": "Date when record was updated",
-					"objectType": "number",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "number"
 				},
 				{
-					"id": "6876af2b-14d5-45d5-cd0f-44baef3b17b7",
+					"id": "4e197117-3ebc-4720-833b-b49b8c1cc96d",
 					"parent": "",
 					"name": "updatedBy",
 					"description": "Updated By",
-					"objectType": "string",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "string"
 				}
 			]
 		},
 		{
-			"id": "78888269-7f1d-4973-f751-22c363060e13",
+			"id": "c4604484-924b-426d-ebd0-1fbc7f07b1d5",
 			"name": "Error",
 			"properties": [
 				{
-					"id": "6b485e85-3092-47ef-bc51-f0db35bd4d8a",
+					"id": "1638bcf7-7517-4b85-f58e-a3b296759bd6",
 					"parent": "",
 					"name": "status",
 					"objectType": "string"
 				},
 				{
-					"id": "f3404557-024d-4b4d-cdad-31d90d67e372",
+					"id": "e9d55a90-0f80-43e6-b86a-919c3a521dd8",
 					"parent": "",
 					"name": "message",
 					"objectType": "string"
@@ -393,11 +321,11 @@
 			]
 		},
 		{
-			"id": "678edeec-174b-49da-90f5-f7ca6888e1e5",
+			"id": "27688041-f43d-4ae6-d0db-4df3584cdc2b",
 			"name": "count",
 			"properties": [
 				{
-					"id": "12232690-fbba-4fd6-e549-4ffcb580b694",
+					"id": "d8a814fc-61fe-4650-8413-7b067ef1d470",
 					"parent": "",
 					"name": "count",
 					"objectType": "number"
@@ -406,9 +334,9 @@
 		}
 	],
 	"documentation": [],
-	"name": "hackathon_products_api",
+	"name": "hackathon_warehouse_API",
 	"endpoint": "/api/entity",
-	"ver": "22.8.8.916",
+	"ver": "22.8.8.915",
 	"version": null,
 	"description": null,
 	"mediaType": "application/json",
@@ -418,6 +346,7 @@
 	"apiType": "table",
 	"about": null,
 	"enableProxy": false,
+	"forwardProxy": null,
 	"restrictAccess": false,
 	"enableTrace": false,
 	"enableIDE": true,

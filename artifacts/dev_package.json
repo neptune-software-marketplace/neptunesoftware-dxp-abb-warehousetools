@@ -1,38 +1,11 @@
 {
-	"id": "9EA3B199-FA16-ED11-BD6E-A085FCBC6CDC",
+	"id": "9ea3b199-fa16-ed11-bd6e-a085fcbc6cdc",
 	"createdAt": "2022-08-08T09:15:10.473Z",
 	"createdBy": "kristin.eliassen@neptune-software.com",
 	"git": {
 		"targetServers": [],
 		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-warehousetools",
-		"testServers": [],
-		"packageJSON": [
-			"==OBJECT STRING==",
-			"{",
-			"  \"name\": \"neptunesoftware-dxp-abb-warehousetools\",",
-			"  \"version\": \"1.0.0\",",
-			"  \"description\": \"neptunesoftware-dxp-abb-warehousetools\",",
-			"  \"author\": \"Neptune Software\",",
-			"  \"license\": \"LicenseRef-LICENSE\",",
-			"  \"private\": true,",
-			"  \"scripts\": {",
-			"    \"deploy\": \"ts-node src/deploy.ts\",",
-			"    \"test\": \"jest --passWithNoTests\"",
-			"  },",
-			"  \"engines\": {",
-			"    \"node\": \"14.16.0\"",
-			"  },",
-			"  \"devDependencies\": {",
-			"    \"@types/jest\": \"^26.0.23\",",
-			"    \"typescript\": \"^4.2.3\",",
-			"    \"ts-node\": \"^10.0.0\",",
-			"    \"axios\": \"^0.21.1\",",
-			"    \"jest\": \"^27.0.4\",",
-			"    \"ts-jest\": \"^27.0.3\"",
-			"  }",
-			"}",
-			""
-		]
+		"testServers": []
 	},
 	"name": "neptunesoftware-dxp-abb-warehousetools",
 	"description": null,
@@ -40,34 +13,34 @@
 	"enableCICD": true,
 	"apps": [
 		{
-			"id": "F4413C5F-D455-ED11-ADE6-A085FC67ADE0",
+			"id": "f4413c5f-d455-ed11-ade6-a085fc67ade0",
 			"application": "hackathon_warehouse_create_offline",
 			"title": "",
-			"description": ""
+			"description": "",
+			"package": {
+				"id": "9ea3b199-fa16-ed11-bd6e-a085fcbc6cdc"
+			}
 		},
 		{
-			"id": "7690188A-D455-ED11-ADE6-A085FC67ADE0",
-			"application": "hackathon_warehouse_list_offline",
-			"title": "",
-			"description": ""
-		},
-		{
-			"id": "5338D349-A5DD-EC11-B656-A085FCBCB3C7",
+			"id": "5338d349-a5dd-ec11-b656-a085fcbcb3c7",
 			"application": "hackathon_warehouse",
 			"title": "",
-			"description": ""
+			"description": "",
+			"package": {
+				"id": "9ea3b199-fa16-ed11-bd6e-a085fcbc6cdc"
+			}
 		}
 	],
 	"api": [
 		{
-			"id": "20BAE134-A7DD-EC11-B656-A085FCBCB3C7",
-			"name": "hackathon_warehouse_API",
+			"id": "f2d104a3-52e7-ec11-b656-a085fcbcb3c7",
+			"name": "hackathon_products_api",
 			"description": null,
 			"apiGroup": null
 		},
 		{
-			"id": "F2D104A3-52E7-EC11-B656-A085FCBCB3C7",
-			"name": "hackathon_products_api",
+			"id": "20bae134-a7dd-ec11-b656-a085fcbcb3c7",
+			"name": "hackathon_warehouse_API",
 			"description": null,
 			"apiGroup": null
 		}
@@ -76,12 +49,12 @@
 	"odataMock": [],
 	"dictionary": [
 		{
-			"id": "EB2F1DAF-A6DD-EC11-B656-A085FCBCB3C7",
+			"id": "eb2f1daf-a6dd-ec11-b656-a085fcbcb3c7",
 			"name": "hackathon_warehouse_products",
 			"description": null
 		},
 		{
-			"id": "60E2CE6E-52E7-EC11-B656-A085FCBCB3C7",
+			"id": "60e2ce6e-52e7-ec11-b656-a085fcbcb3c7",
 			"name": "hackathon_products",
 			"description": "products"
 		}
@@ -105,5 +78,9 @@
 	"department": [],
 	"script_scheduler": [],
 	"wf_definition": [],
-	"connector": []
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
 }

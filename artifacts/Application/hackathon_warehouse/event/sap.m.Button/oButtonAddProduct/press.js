@@ -1,0 +1,2 @@
+// Call submit function 
+submit();

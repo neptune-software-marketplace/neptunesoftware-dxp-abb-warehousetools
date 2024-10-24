@@ -1,0 +1,41 @@
+// Set selected content to the HTML object 
+sap.ui.getCore().attachInit(function (data) {
+    oHTMLObjectCameraUpload.setContent('<input type="file" accept="image/*" id="file-input"  style="display:none" multiple>')
+});
+
+// After setting the oHTMLObject, create the EventListener
+setTimeout(function () {
+    const fileInput = oFlexBoxCameraUpload.getDomRef();
+    fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));
+}, 1000);
+
+// Callback function from EventListener
+function handleFileSelect(f) {
+    var reader = new FileReader();
+
+    reader.onload = (function (theFile) {
+        return function (e) {
+            var binaryData = e.target.result;
+
+            // Converting Binary Data to base 64
+            var base64String = window.btoa(binaryData);
+
+            var fullBase64picture = "data:image/png;base64," + base64String;
+
+            // Set the fullBase64 as hte image source
+            oImagePreview.setSrc(fullBase64picture);
+            oLabelPreview.setVisible(true);
+
+        };
+    })(f);
+    reader.readAsBinaryString(f);
+}
+
+// Select file from device 
+
+setTimeout(function () {
+
+    fileElem = document.getElementById("file-input");
+    fileElem.click();
+
+}, 200);

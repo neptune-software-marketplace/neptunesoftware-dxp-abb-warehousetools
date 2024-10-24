@@ -47,6 +47,7 @@
 	"description": null,
 	"ver": "22.10.27.1047",
 	"enableAudit": false,
+	"includeDataInPackage": false,
 	"package": "9ea3b199-fa16-ed11-bd6e-a085fcbc6cdc",
 	"rolesRead": [],
 	"rolesWrite": []

@@ -1,0 +1,15 @@
+// Initiate scanning 
+
+if (oEvent.mParameters.clearButtonPressed === false) {
+    // Open dialog 
+    oDialogScan.open();
+    
+    // Set the video container to be visible 
+    oHBoxVideoContainer.setVisible(true);
+    
+    // Calling start scan function 
+    startScan();
+} else {
+    // Message in case of error
+    sap.m.MessageToast.show("Error - Scanning not available");
+}

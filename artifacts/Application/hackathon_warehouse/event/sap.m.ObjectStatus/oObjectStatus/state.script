@@ -1,0 +1,9 @@
+if (typeof AVAILABILITY === "undefined" || AVAILABILITY === null || AVAILABILITY === "") { return; }  
+var formattedText = AVAILABILITY;
+
+if(AVAILABILITY === "Available"){
+    var formattedText = "Success";
+}else{
+    var formattedText = "Error";
+}
+return formattedText;

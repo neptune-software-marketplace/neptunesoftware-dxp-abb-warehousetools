@@ -1,0 +1,17 @@
+// Filering function 
+
+// Get the list items 
+var binding = oGridList.getBinding("items");
+
+// Filter the list by serial number and product name
+var filters = [];
+filters.push(new sap.ui.model.Filter("SERIALNUM", "EQ", this.getValue()));
+filters.push(new sap.ui.model.Filter("PRODNAME", "Contains", this.getValue()));
+
+var aFilter = filters;
+
+var filter = new sap.ui.model.Filter({
+    filters: aFilter,
+    and: false
+});
+binding.filter([filter]);
