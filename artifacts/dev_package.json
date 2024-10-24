@@ -9,7 +9,7 @@
 	},
 	"name": "neptunesoftware-dxp-abb-warehousetools",
 	"description": null,
-	"ver": "22.8.8.919",
+	"ver": "24.10.24.1414",
 	"enableCICD": true,
 	"apps": [
 		{

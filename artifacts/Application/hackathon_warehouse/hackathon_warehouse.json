@@ -134,6 +134,13 @@
 											"response": [],
 											"attributes": [
 												{
+													"attribute": "noDataText",
+													"grouping": "Properties",
+													"value": "Please add a product",
+													"script": "",
+													"translation": []
+												},
+												{
 													"attribute": "styleClass",
 													"grouping": "Properties",
 													"value": "list",
@@ -1615,7 +1622,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "22.8.8.1115",
+	"ver": "24.10.24.1420",
 	"application": "hackathon_warehouse",
 	"title": "",
 	"description": "",
@@ -1637,10 +1644,10 @@
 	"ui5_theme": "sap_fiori_3",
 	"ui5_version": "",
 	"ui5_language": null,
-	"ui5_url": null,
+	"ui5_url": "",
 	"cus_theme": "",
 	"css": "file:///css.css",
-	"compiledCss": null,
+	"compiledCss": "file://script/undefined/undefined.script",
 	"header": "file:///header.html",
 	"manifest": "",
 	"globalScript": "",
@@ -1656,6 +1663,12 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
-	"apis": [],
+	"apis": [
+		{
+			"id": "20bae134-a7dd-ec11-b656-a085fcbcb3c7",
+			"name": "hackathon_warehouse_API",
+			"ver": "22.8.8.915"
+		}
+	],
 	"package": "9ea3b199-fa16-ed11-bd6e-a085fcbc6cdc"
 }
